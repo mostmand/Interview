@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         public int CalculateAge(DateTime dateOfBirth)
         {
-            var now = DateTime.Now;
+            var now = DateTime.UTCNow;
             var difference = now - dateOfBirth;
             return difference.Days / 365;
         }
